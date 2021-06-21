@@ -1,11 +1,17 @@
 import React from "react";
 import ReactDom from "react-dom";
 
+const fname = "Mayank";
+const lname = "Arya";
+const luckyNumber = 7;
+
+// can use this variable inside HTML by using curly braces {}
+
 ReactDom.render(
   <div>
-    <h1>Hello World</h1>
+    <h1>Hello {fname + " " + lname}!</h1>
     <ul>
-      <li>list item</li>
+      <li>My lucky number is {luckyNumber}</li>
       <li>list item</li>
       <li>list item</li>
     </ul>
