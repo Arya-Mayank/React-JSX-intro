@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom";
+import List from "./list";
 
 const fname = "Mayank";
 const lname = "Arya";
@@ -36,6 +37,8 @@ ReactDom.render(
     {/* adding inline css using jsx */}
     <p style={{ color: "blue" }}>Created by {fname + " " + lname}.</p>
     <p style={customStyle}>Copyright {currentYear}</p>
+    {/* adding a react component */}
+    <List />
   </div>,
   document.getElementById("root")
 );
